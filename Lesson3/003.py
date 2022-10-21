@@ -7,7 +7,7 @@ import bot_dictionary as bot
 phrase = input(
     'Для начала разговора с ботом скажите "Привет", для окончания разговора с ботом, в любой момент скажите "Пока": ')
 
-while phrase != 'пока':
+while phrase.lower() != 'пока':
     print(bot.dictionary.get((phrase.lower()), 'Извините, я Вас не понимаю'))
     phrase = input('Бот ожидает Вашего ответа: ')
 print(bot.dictionary.get((phrase.lower())))
