@@ -24,12 +24,9 @@ for i in range(len(temp) - 6):
     temp_sum = 0
     for j in range(7):
         temp_sum += temp[i+j]
-    print(f'b {temp_sum}')
     if temp_sum > temp_span_max:
         temp_span_max = i
-        print(f'max {temp_span_max}')
     elif temp_sum < temp_span_min:
-        print(f'min {temp_span_min}')
         temp_span_min = i
 
 start_date = '2021-05-01'
