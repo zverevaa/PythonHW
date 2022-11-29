@@ -49,7 +49,3 @@ def bot_body(message):
 
 
 bot.infinity_polling()
-# def gameStart(message):
-#     bot.reply_to(message, "Бот загадал число, попытайтесь его угадать!")
-#     randomNumber()
-#     bot.register_next_step_handler(message, guessGame)
